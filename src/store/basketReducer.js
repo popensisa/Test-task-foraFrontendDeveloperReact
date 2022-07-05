@@ -10,23 +10,22 @@ export const basketReducer = (state = basketState, action) => {
             const selectOrder = action.payload
             const count = 1
             const foundProduct = cart.find(item => item.id == selectOrder.id)
-            const foundProductColor = cart.find(item => item.color.color == selectOrder.color.color)
-            const foundProductSize = cart.find(item => item.size.size == selectOrder.size.size)
-
-            if(foundProductColor){
-                const compairProduct = foundProductColor.color.color == foundProductSize.color.color && foundProductColor.size.size == foundProductSize.size.size
-                console.log(compairProduct)
-                // if(compairProduct){
-                //     foundProduct.count += 1
-                //     foundProduct.total = foundProduct.regular_price.value * foundProduct.count
-                // }else{
-                //     cart.push({
-                //         ...selectOrder,
-                //         count: count,
-                //         total: selectOrder.regular_price.value
-                //     })
-                // }
-            }
+            // const foundProductColor = cart.find(item => item.color.color == selectOrder.color.color)
+            // const foundProductSize = cart.find(item => item.size.size == selectOrder.size.size)
+            // if(foundProductColor){
+            //     const compairProduct = foundProductColor.color.color == foundProductSize.color.color && foundProductColor.size.size == foundProductSize.size.size
+            //     console.log(compairProduct)
+            //     // if(compairProduct){
+            //     //     foundProduct.count += 1
+            //     //     foundProduct.total = foundProduct.regular_price.value * foundProduct.count
+            //     // }else{
+            //     //     cart.push({
+            //     //         ...selectOrder,
+            //     //         count: count,
+            //     //         total: selectOrder.regular_price.value
+            //     //     })
+            //     // }
+            // }
             
             if(foundProduct){
                 foundProduct.count += 1
