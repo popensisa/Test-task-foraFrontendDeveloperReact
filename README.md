@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Тестовое задание для фронтенд-разработчика (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+В тестовом задании представлены макеты дизайна двух страниц: страницы каталога продуктов и страница корзины. Тестовое задание состоит из нескольких уровней — обязательных (level 1, level 2 и level 3) и необязательный (level 4). В обязательных задачах мы проверяем знания необходимые для прохождения на эту позицию. Необязательные задачи не должны занять много времени, но помогут вам показать себя с лучшей стороны. Вы можете сделать только часть из них, если что-то покажется вам интересным, или не делать их вовсе.
 
-## Available Scripts
+## Level 1
 
-In the project directory, you can run:
+Реализовать список товаров, который можно отфильтровать с помощью расположенного слева списка брендов. Необходимые данные можно подгрузить из JSON-файлов продукты и бренды.
 
-### `npm start`
+### Добавление товара в корзину
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+При добавлении в корзину необходимо отображать количество продуктов в корзине рядом с иконкой вверху.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Level 2
 
-### `npm test`
+Сделать респонсив начиная от 320px и выше. Использовать фреймворк Bootstrap. Главное, чтобы интерфейс оставался удобным, аккуратным и эстетичным.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Level 3
 
-### `npm run build`
+Вывести добавленные ранее товары. Добавить поле с возможностью выбора количества и кнопку Удалить для удаления позиции из корзины. Текст с суммой всего заказа должен в реальном времени пересчитывать сумму. Переключение между страницей каталога и корзины реализовать с помощью React Router.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Level 4
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Добавлен новый тип продукта "Настраиваемый" (configurable) . У данного продукта есть опции (configurable_options), в нашем случае пользователь может выбрать цвет и размер товара. Также в информации о продукте присутствует список доступных вариантов товара (variants).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Необходимо реализовать добавление доступных вариантов товаров в корзину и невозможность добавления несуществующих вариантов.
+Менять изображение товара при полном соответствии выбранных опций пользователя с одним из вариантов товара
+Вывести выбранные опции в корзине (если выполнен level 3)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
