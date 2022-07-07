@@ -17,7 +17,7 @@ const CartList = ({orders, addOrder, removeOrder, deleteOrder}) => {
                     <div className='d-flex flex-column align-items-center'>
                         <div className='basket-page-cart-item'>
                             {orders.map(item =>    
-                                <Card style={{ width: '18rem' }} className='m-2' key={item.id}>
+                                <Card style={{ width: '18rem' }} className='m-2' key={item.variants ? item.idDel : item.id}>
                                 <Card.Img variant="top" src={require(`../../assets${item.image}`)} alt='Item img' />
                                 <Card.Body>
                                     <Card.Title>{item.title}</Card.Title>

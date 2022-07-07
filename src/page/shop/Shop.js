@@ -50,7 +50,7 @@ const Shop = () => {
     }
     const addOrder = (product) => {
         if(product.variants){
-            const selectOrder = {...product, size: size[activeItem], color: color[activeColor]}
+            const selectOrder = {...product, size: size[activeItem], color: color[activeColor], idDel: Date.now()}
             dispatch({type: ADD_ORDERS, 
                 payload: selectOrder
             })
