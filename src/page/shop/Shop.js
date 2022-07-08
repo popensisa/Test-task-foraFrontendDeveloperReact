@@ -2,11 +2,10 @@ import React, {useState, useEffect} from 'react'
 import Header from '../../components/shop/Header'
 import { useDispatch, useSelector } from 'react-redux'
 import './shop.scss'
-import { ADD_ALLBRANDS, ADD_ALLDATA, ADD_ORDERS, SELECT_BRAND } from '../../store/storeConsts'
+import { ADD_ORDERS, SELECT_BRAND } from '../../store/storeConsts'
 import Brands from '../../components/shop/Brands'
 import Catalog from '../../components/shop/Catalog'
-import Products from '../../assets/productslv3.json'
-import Brand from '../../assets/brands.json'
+import { fetchProducts } from '../../asyncProducts/Products'
 
 const Shop = () => {
     const products = useSelector( store => store.products)
@@ -16,8 +15,7 @@ const Shop = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        dispatch({type: ADD_ALLDATA, payload: Products})
-        dispatch({type: ADD_ALLBRANDS, payload: Brand})
+        dispatch(fetchProducts())
     }, [])
     const size = [{
             id: 0,
